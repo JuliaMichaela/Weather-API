@@ -1,3 +1,5 @@
+
+
 const apiKey = 'a60fa55cb3d341dd95d140431240303';
 
 
@@ -7,6 +9,13 @@ const apiKey = 'a60fa55cb3d341dd95d140431240303';
 const header = document.querySelector('.header');
 const form = document.querySelector('#form');
 const input = document.querySelector('#inputCity');
+
+
+
+function removeCard (){
+    const prevCard = document.querySelector('.card');
+    if (prevCard) prevCard.remove();
+}
 
 
 //Слушаем отправку формы
@@ -33,8 +42,7 @@ form.onsubmit = function (e) {
         // Если есть ошибка - выводим ее
         
         //Удаляем предыдущую карточку
-        const prevCard = document.querySelector('.card');
-        if (prevCard) prevCard.remove();
+        removeCard ();
 
         //Отобразить карточку с ошибкой
         const html = `<div class="card">${data.error.message}</div>`;
@@ -43,9 +51,7 @@ form.onsubmit = function (e) {
         // Если ошибки нет - выводим карточку
 
         //Удаляем предыдущую карточку
-
-        const prevCard = document.querySelector('.card');
-        if (prevCard) prevCard.remove();
+        removeCard ();
 
         //Отображаем полученные данные в карточке
         // Разметка для карточки
