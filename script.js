@@ -1,16 +1,10 @@
-
-
 const apiKey = 'a60fa55cb3d341dd95d140431240303';
-
-
 
 // Элементы на странице
 
 const header = document.querySelector('.header');
 const form = document.querySelector('#form');
 const input = document.querySelector('#inputCity');
-
-
 
 function removeCard (){
     const prevCard = document.querySelector('.card');
@@ -27,6 +21,10 @@ form.onsubmit = function (e) {
     let city = input.value.trim();
     console.log (city);
 
+    // if (input.value == "") {
+    //         city = 'London';
+    //     }
+
     //Делаем запрос на сервер
     //Адрес запроса
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
@@ -37,6 +35,7 @@ form.onsubmit = function (e) {
         return response.json()
     }).then((data) => {
         console.log (data);
+
         
         if (data.error) {
         // Если есть ошибка - выводим ее
