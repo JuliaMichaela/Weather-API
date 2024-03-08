@@ -20,10 +20,7 @@ form.onsubmit = function (e) {
     //Берем значение из инпута, обрезаем пробелы
     let city = input.value.trim();
     console.log (city);
-
-    // if (input.value == "") {
-    //         city = 'London';
-    //     }
+    console.log (city);
 
     //Делаем запрос на сервер
     //Адрес запроса
@@ -42,6 +39,12 @@ form.onsubmit = function (e) {
         
         //Удаляем предыдущую карточку
         removeCard ();
+
+
+        // if (input.value == "") {
+        //     city = 'London';
+        // }
+
 
         //Отобразить карточку с ошибкой
         const html = `<div class="card">${data.error.message}</div>`;
