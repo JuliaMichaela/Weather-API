@@ -20,7 +20,6 @@ form.onsubmit = function (e) {
     //Берем значение из инпута, обрезаем пробелы
     let city = input.value.trim();
     console.log (city);
-    console.log (city);
 
     //Делаем запрос на сервер
     //Адрес запроса
