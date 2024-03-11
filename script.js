@@ -74,10 +74,6 @@ form.onsubmit = function (e) {
 
         }
 
-
-        
-        console.log (city);
-
     })
 
 
