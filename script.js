@@ -32,6 +32,7 @@ form.onsubmit = function (e) {
     }).then((data) => {
         console.log (data);
 
+
         
         if (data.error) {
         // Если есть ошибка - выводим ее
@@ -69,7 +70,7 @@ form.onsubmit = function (e) {
 
                     </div>`;
 
-        //Отображаем карточку на странице
+        
         header.insertAdjacentHTML('afterend', html);
 
         }
