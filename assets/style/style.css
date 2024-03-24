@@ -142,3 +142,12 @@ body{
     font-size: 20px;
     line-height: 1;
 }
+
+
+@media (max-width: 1190px) {
+    .card-description {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+}
