@@ -149,5 +149,9 @@ body{
         font-size: 10px;
         line-height: 1;
     }
+    .card-img {
+        width: 100px;
+    }
+
 
 }
