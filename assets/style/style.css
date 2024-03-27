@@ -153,5 +153,10 @@ body{
         width: 100px;
     }
 
+    .card-description {
+        font-size: 10px;
+        line-height: 1;
+    }
+
 
 }
