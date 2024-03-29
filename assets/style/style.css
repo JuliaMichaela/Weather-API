@@ -158,5 +158,9 @@ body{
         line-height: 1;
     }
 
+    .card-value sup {
+        font-size: 20%;
+    }
+
 
 }
