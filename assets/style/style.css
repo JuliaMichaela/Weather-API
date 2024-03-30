@@ -162,5 +162,12 @@ body{
         font-size: 20%;
     }
 
+    .card-value {
+        font-size: 45px;
+        line-height: 1;
+    
+        color: #000000;
+    }
+
 
 }
