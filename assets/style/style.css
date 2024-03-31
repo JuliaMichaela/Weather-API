@@ -168,6 +168,12 @@ body{
     
         color: #000000;
     }
+    .card-city {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 13px;
+        color: #000000;
+    }
 
 
 }
